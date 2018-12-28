@@ -4,16 +4,8 @@
 #### [eosjs](https://github.com/EOSIO/eosjs)
 > eosjs 使用 TypeScript 
 
-##### index.ts
+#####  src 文件
 
-*  导出 可用的类有
-```
-export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
-
-```
-* Api 的构造方法里的参数有  ``rp`` , ``authorityProvider`` , ``abiProvider`` , ``signatureProvide`` , ``chainId`` , ``textEncoder`` , ``textDecoder`` ,
-
-* src 下文件
 ```
 
 -- eosjs-api-interfaces.ts
@@ -31,6 +23,17 @@ export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
 -- rpc-web.ts
 -- tests
 -- transaction.abi.json
+
+##### index.ts
+
+*  导出 可用的类有
+```
+export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
+
+```
+* Api 的构造方法里的参数有  ``rp`` , ``authorityProvider`` , ``abiProvider`` , ``signatureProvide`` , ``chainId`` , ``textEncoder`` , ``textDecoder`` ,
+
+
 ```
 * eosjs-rpc-interfaces.ts 文件中包含 rpc 定义的数据结构如
 
