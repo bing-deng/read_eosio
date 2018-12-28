@@ -56,7 +56,8 @@ public async get_account(account_name: string): Promise<any> {
 ```
 
 
-* eosjs-rpc-interfaces.ts 文件中包含 rpc 定义的数据结构如
+##### *-interfaces.ts 中定义了 数据结构
+* 如eosjs-rpc-interfaces.ts 文件中包含 rpc 定义的数据结构如
 
 ```
 
