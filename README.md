@@ -34,7 +34,7 @@
 export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
 ```
 
-##### eosjs-api.js 即 Api
+##### Api 即 eosjs-api.js  
 
 * Api 的构造方法里的参数有  ``rp`` , ``authorityProvider`` , ``abiProvider`` , ``signatureProvide`` , ``chainId`` , ``textEncoder`` , ``textDecoder`` ,
 * `` transact`` 方法是 核心方法，用法发送 交易。
@@ -43,6 +43,17 @@ export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
 public async transact(transaction: any, { broadcast = true, sign = true, blocksBehind, expireSeconds }:
 ``` 
 
+##### [JsonRpc 即 eosjs-jsonrpc.ts](https://github.com/EOSIO/eosjs/blob/master/src/eosjs-jsonrpc.ts)
+
+* JsonRpc 定义了 rpc 方法对用的链上的的操作 如下，请求 http://endpoit/v1/chain/get_account 和 rpc.get_account 是一样的效果（有参数）。
+
+```
+/** Raw call to `/v1/chain/get_account` */
+// tslint:disable-next-line:variable-name
+public async get_account(account_name: string): Promise<any> {
+    return await this.fetch("/v1/chain/get_account", { account_name });
+}
+```
 
 
 * eosjs-rpc-interfaces.ts 文件中包含 rpc 定义的数据结构如
