@@ -39,7 +39,8 @@ export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
 * Api 的构造方法里的参数有  ``rp`` , ``authorityProvider`` , ``abiProvider`` , ``signatureProvide`` , ``chainId`` , ``textEncoder`` , ``textDecoder`` ,
 * `` transact`` 方法是 核心方法，用法发送 交易。
 
-```    public async transact(transaction: any, { broadcast = true, sign = true, blocksBehind, expireSeconds }:
+```
+public async transact(transaction: any, { broadcast = true, sign = true, blocksBehind, expireSeconds }:
 ``` 
 
 
