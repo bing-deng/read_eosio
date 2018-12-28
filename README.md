@@ -1,7 +1,18 @@
 
-## 阅读 eosio 源代码
+## 阅读 eosjs 源代码
 
 #### [eosjs](https://github.com/EOSIO/eosjs)
+> eosjs 使用 TypeScript 
+
+##### index.ts
+
+*  导出 可用的类有
+```
+export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
+
+```
+* Api 的构造方法里的参数有  ``rp`` , ``authorityProvider`` , ``abiProvider`` , ``signatureProvide`` , ``chainId`` , ``textEncoder`` , ``textDecoder`` ,
+
 * src 下文件
 ```
 
