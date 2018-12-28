@@ -36,7 +36,7 @@
 
 ##### index.ts
 
-*  导出 可用的类有
+*  导出 可用的模块有
 
 ```
 export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
