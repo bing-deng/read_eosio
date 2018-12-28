@@ -3,6 +3,7 @@
 
 #### [eosjs](https://github.com/EOSIO/eosjs)
 > eosjs 使用 TypeScript 
+> 依赖库 有 eos-ecc 和 text-eoncoding
 
 #####  src 文件
 
