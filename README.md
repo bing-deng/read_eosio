@@ -30,8 +30,12 @@
 ```
 export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
 
+
+##### eosjs-api.js 即 Api
 ```
 * Api 的构造方法里的参数有  ``rp`` , ``authorityProvider`` , ``abiProvider`` , ``signatureProvide`` , ``chainId`` , ``textEncoder`` , ``textDecoder`` ,
+* 其中 ``    public async transact(transaction: any, { broadcast = true, sign = true, blocksBehind, expireSeconds }:
+``  ,`` transact`` 方法是 核心方法，用法发送 交易。
 
 
 ```
