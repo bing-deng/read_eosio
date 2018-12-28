@@ -6,7 +6,12 @@
 > 依赖库 有 eos-ecc 和 text-eoncoding
 > eos-ecc 是椭圆曲线加密的js实现 ,提供了在js 环境中的 加密相关功能，如通过私钥获取公约、 随机生成公私钥等
 
-#####  src 文件
+#### docs 目录
+ * ``2.-Transaction-Examples.md``  使用 `` api.transact`` 交易的写法
+ *  `` 3.-Browsers.md`` 浏览器里如何使用 eosjs
+ *  `` 4.-Reading blockchain-Examples.md `` 如何获取eos链上数据 列举了 ``get_table_rows`` ``get_currency_balance`` `` get_account`` 的使用范例
+
+####  src 文件
 
 ```
 
@@ -58,7 +63,7 @@ public async get_account(account_name: string): Promise<any> {
 ```
 
 
-##### *-interfaces.ts 中定义了 数据结构
+#### *-interfaces.ts 中定义了 数据结构
 * 如eosjs-rpc-interfaces.ts 文件中包含 rpc 定义的数据结构如
 
 ```
