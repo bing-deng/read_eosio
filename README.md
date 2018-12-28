@@ -24,25 +24,29 @@
 -- tests
 -- transaction.abi.json
 
+```
+
 ##### index.ts
 
 *  导出 可用的类有
+
 ```
 export { Api, ApiInterfaces, JsonRpc, RpcInterfaces, RpcError, Serialize };
-
+```
 
 ##### eosjs-api.js 即 Api
-```
+
 * Api 的构造方法里的参数有  ``rp`` , ``authorityProvider`` , ``abiProvider`` , ``signatureProvide`` , ``chainId`` , ``textEncoder`` , ``textDecoder`` ,
-* 其中 ``    public async transact(transaction: any, { broadcast = true, sign = true, blocksBehind, expireSeconds }:
-``  ,`` transact`` 方法是 核心方法，用法发送 交易。
+* `` transact`` 方法是 核心方法，用法发送 交易。
+
+```    public async transact(transaction: any, { broadcast = true, sign = true, blocksBehind, expireSeconds }:
+``` 
 
 
-```
+
 * eosjs-rpc-interfaces.ts 文件中包含 rpc 定义的数据结构如
 
 ```
-
 
 /** Return value of `/v1/chain/get_info` */
 export interface GetInfoResult {
