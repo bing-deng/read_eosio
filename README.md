@@ -2,9 +2,10 @@
 ## 阅读 eosjs 源代码
 
 #### [eosjs](https://github.com/EOSIO/eosjs)
-> eosjs 使用 TypeScript 
-> 依赖库 有 eos-ecc 和 text-eoncoding
-> eos-ecc 是椭圆曲线加密的js实现 ,提供了在js 环境中的 加密相关功能，如通过私钥获取公约、 随机生成公私钥等
+> eosjs 使用 TypeScript 。
+> 依赖库 有 eos-ecc 和 text-eoncoding。
+> eos-ecc 是椭圆曲线加密的js实现 ,提供了在js 环境中的 加密相关功能，如通过私钥获取公约、 随机生成公私钥等。
+> srouce 中主要的文件是 ``eosjs-api.js`` 和 ``eosjs-josnrpc.ts`` 两个文件
 
 #### docs 目录
  * ``2.-Transaction-Examples.md``  使用 `` api.transact`` 交易的写法
