@@ -7,6 +7,11 @@
 > eos-ecc 是椭圆曲线加密的js实现 ,提供了在js 环境中的 加密相关功能，如通过私钥获取公约、 随机生成公私钥等。
 > srouce 中主要的文件是 ``eosjs-api.js`` 和 ``eosjs-josnrpc.ts`` 两个文件
 
+#### 支持范围
+* 浏览器 支持
+* nodejs 支持
+* react-native 不支持，（依赖库 eos-ecc 不支持React-native ）,参考下文 ref 有个fork 的仓库 支持 React-natve
+
 #### docs 目录
  * ``2.-Transaction-Examples.md``  使用 `` api.transact`` 交易的写法
  *  `` 3.-Browsers.md`` 浏览器里如何使用 eosjs
@@ -87,6 +92,8 @@ export interface GetInfoResult {
 ```
 
 
-
+#### ref
+* [eosjs-ecc](https://github.com/EOSIO/eosjs-ecc)
+* [支持Reat-native 版本的eosjs](https://github.com/Game-X-Coin/eosjs-rn)
 
 # EOSIO
