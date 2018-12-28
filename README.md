@@ -2,7 +2,25 @@
 ## 阅读 eosio 源代码
 
 #### [eosjs](https://github.com/EOSIO/eosjs)
+* src 下文件
+```
 
+-- eosjs-api-interfaces.ts
+-- eosjs-api.ts
+-- eosjs-ecc.d.ts
+-- eosjs-jsonrpc.ts
+-- eosjs-jssig.ts
+-- eosjs-numeric.ts
+-- eosjs-rpc-interfaces.ts # 定义rpc 接口返回数据结构
+-- eosjs-rpcerror.ts
+-- eosjs-serialize.ts
+-- index.ts
+-- ripemd.es5.js
+-- ripemd.js
+-- rpc-web.ts
+-- tests
+-- transaction.abi.json
+```
 * eosjs-rpc-interfaces.ts 文件中包含 rpc 定义的数据结构如
 
 ```
